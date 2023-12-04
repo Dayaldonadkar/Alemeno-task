@@ -40,8 +40,8 @@
 
   {
     "id": 2,
-    "name": "Introduction to React Native'",
-    "instructor": "John Doe",
+    "name": "Mern",
+    "instructor": "dayal",
     "description": "Learn the basics of React Native development and build your first mobile app.",
     " enrollmentStatus": "Open",
 
