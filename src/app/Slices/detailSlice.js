@@ -3,6 +3,7 @@ import course from "/Users/dayaldonadkar/task-alemeno/src/Course.json";
 
 export const detailSlice = createSlice({
   name: "detail",
+
   initialState: { course },
   reducers: {
     details: (state, action) => {

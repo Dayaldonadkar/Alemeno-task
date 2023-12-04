@@ -1,17 +1,18 @@
 [
   {
     "id": 1,
-    "name": "Introduction to React Native'",
+    "name": "Introduction to React Native",
     "instructor": "John Doe",
     "description": "Learn the basics of React Native development and build your first mobile app.",
     " enrollmentStatus": "Open",
 
-    "thumbnail": "your.image.here",
+    "thumbnail": "https://pagepro.co/blog/wp-content/uploads/2020/03/react-native-logo-884x1024.png",
     "duration": "8 weeks",
     "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
     "location": "Online",
     "prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
     "projects": "6+ projects",
+    "rating": 4.4,
     "syllabus": [
       {
         "week": 1,
@@ -43,13 +44,90 @@
     "name": "Mern",
     "instructor": "dayal",
     "description": "Learn the basics of React Native development and build your first mobile app.",
-    " enrollmentStatus": "Open",
-
+    "enrollmentStatus": "Open",
+    "projects": "4+ projects",
     "thumbnail": "your.image.here",
     "duration": "8 weeks",
     "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
     "location": "Online",
     "prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
+    "rating": 4.4,
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Introduction to React Native",
+        "content": "Overview of React Native, setting up your development environment."
+      },
+      {
+        "week": 2,
+        "topic": "Building Your First App",
+        "content": "Creating a simple mobile app using React Native components."
+      }
+    ],
+    "students": [
+      {
+        "id": 101,
+        "name": "Alice Johnson",
+        "email": "alice@example.com"
+      },
+      {
+        "id": 102,
+        "name": "Bob Smith",
+        "email": "bob@example.com"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Mern",
+    "instructor": "dayal",
+    "description": "Learn the basics of React Native development and build your first mobile app.",
+    " enrollmentStatus": "Open",
+    "projects": "4+ projects",
+    "thumbnail": "your.image.here",
+    "duration": "8 weeks",
+    "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+    "location": "Online",
+    "prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
+    "rating": 4.4,
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Introduction to React Native",
+        "content": "Overview of React Native, setting up your development environment."
+      },
+      {
+        "week": 2,
+        "topic": "Building Your First App",
+        "content": "Creating a simple mobile app using React Native components."
+      }
+    ],
+    "students": [
+      {
+        "id": 101,
+        "name": "Alice Johnson",
+        "email": "alice@example.com"
+      },
+      {
+        "id": 102,
+        "name": "Bob Smith",
+        "email": "bob@example.com"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Mern",
+    "instructor": "dayal",
+    "description": "Learn the basics of React Native development and build your first mobile app.",
+    " enrollmentStatus": "Open",
+    "projects": "4+ projects",
+    "thumbnail": "your.image.here",
+    "duration": "8 weeks",
+    "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+    "location": "Online",
+    "prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
+    "rating": 4.4,
     "syllabus": [
       {
         "week": 1,

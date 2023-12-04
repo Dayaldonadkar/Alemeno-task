@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchLocalData } from "../Redux/actions";
+
 import { detailSlice } from "../app/Slices/detailSlice";
 import { Link } from "react-router-dom";
 import CourseCard from "../Components/CourseCard";
 
 const CourseListing = () => {
   const [course, setCourse] = useState("");
-  const [instructorSearch, setInstructorSearch] = useState("");
+
   console.log(course);
   const courses = useSelector((state) => state.details);
   //   console.log("deta", courses);
@@ -15,17 +15,17 @@ const CourseListing = () => {
   return (
     <div className="flex justify-center bg-[#FAF7F2]">
       <div className="w-[90%]">
-        <h1 className="text-xl font-semibold"> Explore our courses</h1>
+        <h1 className="text-2xl font-semibold"> Explore our courses</h1>
         <div className="py-2">
           <input
-            className="border-black border  outline-none rounded-lg placeholder:text-sm pl-2 py-[1px] pb-[3px]"
-            placeholder="search by Course Name"
+            className="border-black border  outline-none rounded-lg placeholder:text-xs pl-2 py-[1px] pb-[3px] w-[]"
+            placeholder="search by Course or Instructor name"
             type="text"
             onChange={(e) => setCourse(e.target.value)}
           />
         </div>
-        <div>
-          <h3 className="text-lg font-medium">Courses</h3>
+        <div className="pt-5">
+          <h3 className="text-xl pb-2 font-medium">Courses</h3>
 
           {courses.course
 
@@ -33,12 +33,14 @@ const CourseListing = () => {
               return course.toLowerCase() === ""
                 ? item
                 : item.name.toLowerCase().includes(course.toLowerCase()) ||
-                    item.instructor.toLowerCase().includes(course);
+                    item.instructor
+                      .toLowerCase()
+                      .includes(course.toLowerCase());
             })
             .map((item) => {
               const { instructor, name, duration, projects, id } = item;
               return (
-                <div className="py-2">
+                <div className="py-5">
                   <Link to={`/details/${id}`}>
                     <CourseCard info={item} />
                   </Link>{" "}
