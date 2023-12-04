@@ -11,6 +11,7 @@
     "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
     "location": "Online",
     "prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
+    "projects": "6+ projects",
     "syllabus": [
       {
         "week": 1,
