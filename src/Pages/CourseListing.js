@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useState } from "react";
+import { useSelector } from "react-redux";
 
-import { detailSlice } from "../app/Slices/detailSlice";
 import { Link } from "react-router-dom";
 import CourseCard from "../Components/CourseCard";
 
@@ -13,7 +12,7 @@ const CourseListing = () => {
   //   console.log("deta", courses);
 
   return (
-    <div className="flex justify-center bg-[#FDF7E4] py-10">
+    <div className="flex justify-center bg-[#FDF7E4] py-10 ">
       <div className="w-[90%] sm:w-[70%] md:w-[60%] lg:w-[70%] xl:w-[60%] 2xl:w-[55%]">
         <h1 className="text-2xl font-semibold "> Explore our courses</h1>
         <div className="py-2">
@@ -38,9 +37,9 @@ const CourseListing = () => {
                         .includes(course.toLowerCase());
               })
               .map((item) => {
-                const { instructor, name, duration, projects, id } = item;
+                const { id } = item;
                 return (
-                  <div className="py-5 w-[90%] 2xl:w-[80%]">
+                  <div className="py-5 lg:w-[90%] 2xl:w-[80%]">
                     <Link to={`/details/${id}`}>
                       <CourseCard info={item} />
                     </Link>

@@ -15,8 +15,8 @@
     ]
   },
   {
-    "id": "Bob smith",
-    "name": "Alice Johnsom",
+    "id": "102",
+    "name": "Bob smith",
     "email": "bob@example.com",
     "coursename": [
       {
@@ -25,16 +25,16 @@
         "instructorname": "John Doe",
         "thumbnail": "https://pagepro.co/blog/wp-content/uploads/2020/03/react-native-logo-884x1024.png",
         "duedate": "04/11/2023",
-        "progress": 80
+        "progress": 20
       },
 
       {
         "id": 3,
-        "name": "Introduction to React Navtive",
-        "instructorname": "John Doe",
+        "name": "Mern stack",
+        "instructorname": "Dayal Donadkar",
         "thumbnail": "https://pagepro.co/blog/wp-content/uploads/2020/03/react-native-logo-884x1024.png",
         "duedate": "04/11/2023",
-        "progress": 80
+        "progress": "80"
       }
     ]
   }

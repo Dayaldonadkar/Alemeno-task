@@ -11,7 +11,16 @@ const Navbar = () => {
             alt=""
           />
         </Link>
-        <div>Dashboard</div>
+        <div className="flex space-x-3">
+          <div>
+            <Link to="/">Courses</Link>
+          </div>
+          <div>
+            <Link to="/Dashboard" className="xl:pr-14">
+              Dashboard
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );

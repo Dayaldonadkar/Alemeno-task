@@ -11,14 +11,14 @@ const CourseDetails = () => {
 
   return (
     <div>
-      <div>
+      <div className="">
         {courses.course &&
           courses.course.map((item) => {
             console.log(id, item.id);
             console.log(typeof item.id, typeof id);
             console.log(id === item.id);
             return parseInt(id) === item.id ? (
-              <div className="bg-[#FDF7E4]">
+              <div className="bg-[#FDF7E4] pb-14">
                 <h1>
                   <DetailsCard info={item} />
                 </h1>
