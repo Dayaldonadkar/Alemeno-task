@@ -9,10 +9,15 @@ const CourseListing = () => {
 
   console.log(course);
   const courses = useSelector((state) => state.details);
-  //   console.log("deta", courses);
+  console.log("deta", typeof courses.course.length, typeof 0);
 
+  const hand = () => {
+    if (courses.course.length) {
+      <div>fasjdlk;</div>;
+    }
+  };
   return (
-    <div className="flex justify-center bg-[#FDF7E4] py-10 ">
+    <div className="flex justify-center bg-[#FDF7E4] py-10 h-screen">
       <div className="w-[90%] sm:w-[70%] md:w-[60%] lg:w-[70%] xl:w-[60%] 2xl:w-[55%]">
         <h1 className="text-2xl font-semibold "> Explore our courses</h1>
         <div className="py-2">
@@ -25,27 +30,47 @@ const CourseListing = () => {
         </div>
         <div className="pt-8">
           <h3 className="text-xl  font-medium">Courses</h3>
-          <div className="lg:grid lg:grid-cols-2 lg:place-items-center">
-            {courses.course
 
-              .filter((item) => {
-                return course.toLowerCase() === ""
-                  ? item
-                  : item.name.toLowerCase().includes(course.toLowerCase()) ||
-                      item.instructor
-                        .toLowerCase()
-                        .includes(course.toLowerCase());
-              })
-              .map((item) => {
-                const { id } = item;
-                return (
-                  <div className="py-5 lg:w-[90%] 2xl:w-[80%]">
-                    <Link to={`/details/${id}`}>
-                      <CourseCard info={item} />
-                    </Link>
-                  </div>
-                );
-              })}
+          <div>
+            {courses.course.filter((item) => {
+              return course.toLowerCase() === ""
+                ? item
+                : item.name.toLowerCase().includes(course.toLowerCase()) ||
+                    item.instructor
+                      .toLowerCase()
+                      .includes(course.toLowerCase());
+            }).length === 0 ? (
+              <div>
+                <h1>
+                  No Courses are there with that Instructor or Course Name{" "}
+                </h1>
+              </div>
+            ) : (
+              <div className="lg:grid lg:grid-cols-2 lg:place-items-center">
+                {courses.course &&
+                  courses.course
+                    .filter((item) => {
+                      return course.toLowerCase() === ""
+                        ? item
+                        : item.name
+                            .toLowerCase()
+                            .includes(course.toLowerCase()) ||
+                            item.instructor
+                              .toLowerCase()
+                              .includes(course.toLowerCase());
+                    })
+                    .map((item) => {
+                      const { id } = item;
+                      return (
+                        <div className="py-5 lg:w-[90%] 2xl:w-[80%]" key={id}>
+                          <Link to={`/details/${id}`}>
+                            <CourseCard info={item} />
+                          </Link>
+                        </div>
+                      );
+                    })}
+              </div>
+            )}
           </div>
         </div>
       </div>
