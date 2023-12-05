@@ -89,8 +89,9 @@ const Dashboard = () => {
                       </div>
 
                       <button
-                        onClick={() => handleButtonClick(index)}
                         className="bg-green-500 px-2 py-2 text-white rounded-lg"
+                        onClick={() => handleButtonClick(index)}
+                        disabled={buttonStates[index]}
                       >
                         {buttonStates[index]
                           ? "Course Completed"
