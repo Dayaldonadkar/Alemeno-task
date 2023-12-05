@@ -42,11 +42,11 @@
   {
     "id": 2,
     "name": "Mern",
-    "instructor": "dayal",
+    "instructor": "Dayal Donadkar",
     "description": "Learn the basics of React Native development and build your first mobile app.",
     "enrollmentStatus": "Open",
     "projects": "4+ projects",
-    "thumbnail": "your.image.here",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/MERN-logo.png/800px-MERN-logo.png",
     "duration": "8 weeks",
     "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
     "location": "Online",
@@ -79,12 +79,12 @@
   },
   {
     "id": 3,
-    "name": "Mern",
-    "instructor": "dayal",
+    "name": "Competetive Programmings",
+    "instructor": "Shubham Karhade",
     "description": "Learn the basics of React Native development and build your first mobile app.",
     " enrollmentStatus": "Open",
-    "projects": "4+ projects",
-    "thumbnail": "your.image.here",
+    "projects": "8+ projects",
+    "thumbnail": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aaa4e2a5-78d4-4924-8c60-6e53429eaf65/dc5ov3v-1149e9fe-fce7-4385-b9a8-21d14d3401bd.png/v1/fill/w_1600,h_1600/competitive_coding_logo_by_dollarakshay_dc5ov3v-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTYwMCIsInBhdGgiOiJcL2ZcL2FhYTRlMmE1LTc4ZDQtNDkyNC04YzYwLTZlNTM0MjllYWY2NVwvZGM1b3Yzdi0xMTQ5ZTlmZS1mY2U3LTQzODUtYjlhOC0yMWQxNGQzNDAxYmQucG5nIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.c24ZaG_NAsaEm8LXErFfaXsIXmxW8PeJt_6MhWxfxNc",
     "duration": "8 weeks",
     "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
     "location": "Online",
@@ -117,9 +117,9 @@
   },
   {
     "id": 4,
-    "name": "Mern",
-    "instructor": "dayal",
-    "description": "Learn the basics of React Native development and build your first mobile app.",
+    "name": "System Design",
+    "instructor": "Ashutosh Rangs",
+    "description": "This course will prepare you for the questions asked on System Design in software engineering interviews.",
     " enrollmentStatus": "Open",
     "projects": "4+ projects",
     "thumbnail": "your.image.here",
@@ -145,11 +145,6 @@
         "id": 101,
         "name": "Alice Johnson",
         "email": "alice@example.com"
-      },
-      {
-        "id": 102,
-        "name": "Bob Smith",
-        "email": "bob@example.com"
       }
     ]
   }
