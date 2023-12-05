@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import course from "/Users/dayaldonadkar/task-alemeno/src/Course.json";
+import course from "./Course.json";
 
 export const detailSlice = createSlice({
   name: "detail",
