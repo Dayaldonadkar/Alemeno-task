@@ -2,10 +2,20 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 
 const Dashboard = () => {
-  const [progress, setProgress] = useState(false);
+  const [buttonStates, setButtonStates] = useState({});
+  const [course, setCourse] = useState(false);
 
   const enroll = useSelector((state) => state.enrolledStudents);
   console.log(enroll, enroll);
+  const handleButtonClick = (id) => {
+    setCourse(true);
+    // Update the button state for the clicked ID
+    setButtonStates((prevState) => ({
+      ...prevState,
+      [id]: !prevState[id],
+      // Toggle the state (true/false)
+    }));
+  };
   return (
     <div className="flex justify-center bg-[#FDF7E4] py-10">
       <div className="w-[90%] sm:w-[70%] md:w-[60%] lg:w-[70%] xl:w-[55%] space-y-14 ">
@@ -48,24 +58,43 @@ const Dashboard = () => {
                       <div className="flex flex-col">
                         <label for="points">Progress Bar</label>
                         <div>
-                          <input
-                            className="w-[50%]"
-                            type="range"
-                            id="points"
-                            name="points"
-                            min="0"
-                            value={course.progress}
-                            max="100"
-                          />
+                          {buttonStates[index] ? (
+                            <div className="flex items-center space-x-5">
+                              <input
+                                className="w-[50%]"
+                                type="range"
+                                id="points"
+                                name="points"
+                                min="0"
+                                value="100"
+                                max="100"
+                              />
+                              <p className="">100 %</p>
+                            </div>
+                          ) : (
+                            <div className="flex items-center space-x-5">
+                              <input
+                                className="w-[50%]"
+                                type="range"
+                                id="points"
+                                name="points"
+                                min="0"
+                                value={course.progress}
+                                max="100"
+                              />
+                              <p>{course.progress}%</p>
+                            </div>
+                          )}
                         </div>
                       </div>
+
                       <button
-                        onClick={() => setProgress(true)}
-                        className="bg-green-500 cursor-pointer text-white px-2 py-1 my-5 rounded-lg"
+                        onClick={() => handleButtonClick(index)}
+                        className="bg-green-500 px-2 py-2 text-white rounded-lg"
                       >
-                        {!progress
-                          ? "Mark Course as Complete"
-                          : "Course Completed"}
+                        {buttonStates[index]
+                          ? "Course Completed"
+                          : "Click to mark as complete"}
                       </button>
                     </div>
                   );

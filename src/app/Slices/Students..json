@@ -13,36 +13,28 @@
         "progress": 80
       },
       {
+        "id": 2,
+        "name": "Introduction to Data Science",
+        "instructorname": "John Doe",
+        "thumbnail": "https://pagepro.co/blog/wp-content/uploads/2020/03/react-native-logo-884x1024.png",
+        "duedate": "04/11/2023",
+        "progress": 50
+      },
+      {
         "id": 4,
         "name": "System Design",
         "instructorname": "Ashutosh Rangs",
         "thumbnail": "https://pagepro.co/blog/wp-content/uploads/2020/03/react-native-logo-884x1024.png",
         "duedate": "04/11/2023",
-        "progress": 80
-      }
-    ]
-  },
-  {
-    "id": "102",
-    "name": "Bob smith",
-    "email": "bob@example.com",
-    "coursename": [
-      {
-        "id": 2,
-        "name": "Introduction to React Navtive",
-        "instructorname": "John Doe",
-        "thumbnail": "https://pagepro.co/blog/wp-content/uploads/2020/03/react-native-logo-884x1024.png",
-        "duedate": "04/11/2023",
-        "progress": 20
+        "progress": 40
       },
-
       {
         "id": 3,
         "name": "Mern stack",
         "instructorname": "Dayal Donadkar",
         "thumbnail": "https://pagepro.co/blog/wp-content/uploads/2020/03/react-native-logo-884x1024.png",
         "duedate": "04/11/2023",
-        "progress": "80"
+        "progress": 60
       }
     ]
   }
